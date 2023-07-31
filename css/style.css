@@ -1,0 +1,124 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+*, *::after, ::before{
+    box-sizing: inherit;
+}
+body{
+    font-family: 'Inter', sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 1.2;
+    min-height: 100vh;
+    background-image: url(../images/window.png);
+    background-repeat: no-repeat;
+    background-size:  cover;
+    background-position: center;
+    color: white;
+}
+body::after{
+    content: '';
+    background-color: rgba(23, 23, 23, .3);
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: -1;
+}
+a{
+    
+    text-decoration: none;
+       
+}
+.win-logo{
+    display: flex;
+}
+.logo-title{
+    font-size: 70px;
+    font-weight: 700;
+    text-align: center;
+    padding: 50px 0 30px;
+    text-transform: uppercase; 
+}
+form{
+    max-width: 600px;
+    height: 450px;
+    margin: 0 auto;
+    background-color: rgba(200, 240, 19, 0.909);
+    color: inherit;
+    text-align: center;
+    border-style: solid;
+    border-radius: 20px;
+}
+.win-logo{
+    display: flex;
+    flex-direction: column;
+    
+}
+.form{
+    display: flex;
+    flex-wrap: wrap;
+    
+}
+.form_title{
+    margin-top: 50px;
+    margin-bottom: 50px;
+    font-size: 40px;
+}
+.my-input{
+    display: inline-block;
+    width: 320px;
+    height: 60px;
+    border: none;
+    border-radius: 24px;
+    border: 5px solid rgb(6, 6, 247);
+    font-size: 40px;
+}
+
+
+.my-link{
+    display: inline-block;
+    min-width: 65%;
+    background-color: red;
+    margin-top: 50px;
+    padding: 18px 20px;
+    font-size: 24px;
+    border-radius: 24px;
+    border: 5px solid rgb(6, 6, 247);
+}
+
+.modal{
+    padding: 100px 80px;
+    background-color: rgb(253, 200, 130);
+}
+.title-dialog{
+    color: red;
+    font-size: 30px;
+    margin-bottom: 50px;
+}
+.close-btn{
+    width: 100%;
+    padding: 15px 0;
+    background-color: #151515;
+    color: white;
+    border-radius: 12px;
+    border-color: yellow;
+    border-width: 5px;
+    box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
+    font-size: 30px;
+    letter-spacing: 4px;
+}
+/* ############################## */
+/* media*/
+@media(max-width:600px){
+    .logo-title{
+        font-size: 50px;
+    }
+    
+}
+
+
+

@@ -1,0 +1,88 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+*, *::after, ::before{
+    box-sizing: inherit;
+}
+body{
+    font-size: 16px;
+    font-family: 'Inter', serif;
+    overflow: hidden;
+}
+.red{
+    color: red;
+    font-weight: 700;
+}
+.blue{
+    color: blue;
+    font-weight: 700;
+}
+.green{
+    color: green;
+    font-weight: 700;
+}
+.yellow{
+    color: yellow;
+    font-weight: 700;
+}
+.brown{
+    color: brown;
+    font-weight: 700;
+}
+.header{
+    background-color: rgb(131, 131, 131);
+}
+.one{
+    height: 100vh;
+    
+}
+.exit{
+    display: flex;
+    justify-content: flex-end;
+    gap: 100px;
+    padding-right: 30px;
+}
+.exit-menu{
+    text-align: center;
+    padding: 10px 60px;
+}
+/* header */
+.menu{
+    
+    padding: 10px 0;
+}
+.menu-list{
+    display: flex;
+    justify-content: center;
+}
+.gross{
+
+    display: flex;
+    gap: 80px;
+    
+}
+li{
+    list-style-type: none;
+}
+a{
+    display: block;
+    text-decoration: none;
+    font-weight: 700;
+    color: white;
+    margin-top: 15px;
+    font-size: 40px;
+}
+.menu-link4{
+    color: rgb(255, 0, 0);
+}
+.menu-burger{
+    display: none;
+    margin-top: 20px;
+}
+.line{
+    width: 40px;
+    margin-bottom: 10px;
+    
+}

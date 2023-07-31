@@ -1,0 +1,170 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+*, *::after, ::before{
+    box-sizing: inherit;
+}
+body{
+    font-size: 16px;
+    font-family: 'Inter', serif;
+}
+.header{
+    background-image: url(../images/back.jpg);
+    min-height: 100vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: top center;
+}
+.container{
+    max-width: 1100px;
+    margin: 0 auto;
+}
+.menu{
+    
+    padding: 10px 0;
+}
+.menu-list{
+    display: flex;
+    justify-content: center;
+}
+.gross{
+
+    display: flex;
+    gap: 80px;
+    
+}
+li{
+    list-style-type: none;
+}
+a{
+    display: block;
+    text-decoration: none;
+    color: white;
+    margin-top: 15px;
+    font-size: 40px;
+    font-weight: 700;
+}
+.menu-link1{
+    color: red;
+}
+.menu-burger{
+    display: none;
+    margin-top: 20px;
+}
+.line{
+    width: 40px;
+    margin-bottom: 10px;
+}
+/* ###### */
+.title-roto{
+    display: flex;
+    min-height: 80vh;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.title-one{
+    font-size: 30px;
+    margin-top: 50px;
+    text-align: center;
+    color: blueviolet;
+}
+.title-two{
+    font-size: 64px;
+    font-weight: 700;
+    color: red;
+    text-align: center;
+}
+.box-text{
+    max-width: 400px;
+    border-style: solid;
+    border-radius: 15px;
+    border-color: blue;
+    border-width: 15px;
+    background-color: rgba(255, 255, 255, 0.548);
+    margin: 0 auto;
+    animation-name: my-anim;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+@keyframes my-anim{
+    0%{
+        border-color: blue;
+    }
+    50%{
+        border-color: rgb(243, 13, 159);
+    }
+    100%{
+        border-color: rgb(12, 236, 124);
+        
+    }
+}
+.title-free{
+    font-size: 16px;
+    margin: 10px 15px;
+    
+}
+.title-four{
+    color: red;
+    font-size: 36px;
+    font-weight: 700;
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+
+/* ########### */
+.section-info{
+    margin: 40px 0 50px;
+}
+.title-text{
+    display: flex;
+
+}
+.title-info{
+    font-size: 30px;
+    font-weight: 700;
+    margin: 20px 0 30px 40px;
+}
+.my-text{
+    margin: 30px 40px;
+}
+
+/* ######### */
+table,th,td{
+  border: 1px solid grey;
+  text-align:center;
+} 
+.m-cr{
+    background-color: #151515;
+}
+
+th,td{
+   padding:10px;
+}
+caption{
+  font-size:20px;
+  color:blue;
+}
+
+
+@media(max-width:800px){
+    .gross{
+        display: none;
+    }
+    .menu-burger{
+        display: block;
+    }
+    .menu-list{
+        display: flex;
+        justify-content: space-evenly;
+    }
+}
+.my-table-Er1{
+    margin: 50px 0;
+}
+.my-table-Er2{
+    margin-bottom: 50px;
+}
