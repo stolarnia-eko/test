@@ -3,7 +3,7 @@
 function showDialog(){
     let a = document.getElementById('entry').value;
     const dialog = document.getElementById("myDialog");
-    if (a == '123'){
+    if (a == 'ekowindow123'){
         document.location.href = 'home.html';
     }
     else{
