@@ -765,27 +765,25 @@ function click_button_ER_1() {
 
 
     //jednoskrzydlowka rozwierne
-    // if (res1 == 1 && res2 == 0 && res3 == 1 && res4 == 0) {
-    //     if (width !== '' && height !== '' && klamka !== '') {
-    //         if (height >= 280 && height <= 2800 && width <= 1600) {
-    //             document.querySelector('.one').style.display = 'none';
-    //             document.querySelector('.my-program1').style.display = 'block';
-    //             zasuwnica(height, klamka)
-    //             plecy(height);
-    //             dol(width);
-    //             gora_rozw(width);
-    //             document.querySelector('.info-gabaryt-width1').textContent = width;
-    //             document.querySelector('.info-gabaryt-height1').textContent = height;
-    //             document.querySelector('.info-gabaryt-klamka1').textContent = klamka;
-    //         }
-    //         else {
-    //             showDialog();
-    //             document.querySelector('.title-dialog').innerText = 'Uwaga: Okno nie moze byc wykonane - Niema takich zakresow!!!';
+    if (res1 == 1 && res2 == 0 && res3 == 1 && res4 == 0) {
+        if (width !== '' && height !== '' && klamka !== '') {
+            if (height >= 280 && height <= 2800 && width <= 1600) {
+                zasuwnica(height, klamka)
+                plecy_rozw_uch(height);
+                dol_Er1(width);
+                gora_rozw_uch(width)
+                document.querySelector('.info-gabaryt-width1').textContent = width;
+                document.querySelector('.info-gabaryt-height1').textContent = height;
+                document.querySelector('.info-gabaryt-klamka1').textContent = klamka;
+            }
+            else {
+                showDialog();
+                document.querySelector('.title-dialog').innerText = 'Uwaga: Niema takich zakresow!!!';
 
-    //         }
+            }
 
-    //     }
-    // }
+        }
+    }
 
     //jednoskrzydlowka rozwierno-uchylne
     if (res1 == 1 && res2 == 0 && res3 == 0 && res4 == 1) {
