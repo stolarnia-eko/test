@@ -1,0 +1,101 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+*, *::after, ::before{
+    box-sizing: inherit;
+}
+body{
+    margin: 0;
+    padding: 0;
+    font-size: 20px;
+    font-family: 'Inter' serif;
+    font-weight: 400;
+    line-height: 1.3;
+    color: black;
+}
+.menu{
+    
+    padding: 10px 0;
+}
+.menu-list{
+    display: flex;
+    justify-content: center;
+}
+.gross{
+
+    display: flex;
+    gap: 80px;
+    
+}
+li{
+    list-style-type: none;
+}
+a{
+    display: block;
+    text-decoration: none;
+    font-weight: 700;
+    color: white;
+    margin-top: 15px;
+    font-size: 40px;
+}
+.menu-link3{
+    color: red;
+}
+.menu-burger{
+    display: none;
+    margin-top: 20px;
+}
+.line{
+    width: 40px;
+    margin-bottom: 10px;
+    
+}
+header{
+    background-color: #151515;
+    margin-bottom: 100px;
+}
+/* #####3333--- container------ */
+.container{
+    max-width: 1200px;
+    margin: 0 auto;
+}
+.tytul{
+    text-align: center;
+    font-size: 48px;
+    font-weight: 700;
+    margin-bottom: 30px;
+}
+.list-img{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+}
+.item-img{
+    border-style: solid;
+    margin-left: 10px;
+    
+}
+.my-img{
+    width: 100%;
+    height: auto;
+}
+.info-montaz{
+    max-width: 400px;
+    text-align: left;
+    margin: 0 10px;
+}
+.img-x-xx{
+    display: flex;
+    justify-content: space-between;
+}
+
+.box2{
+    margin-bottom: 50px;
+}
+.box3{
+    margin: 50px 0;
+}
+.box5{
+    margin: 30px 0;
+}
