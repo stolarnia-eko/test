@@ -85,17 +85,28 @@ header{
     text-align: left;
     margin: 0 10px;
 }
-.img-x-xx{
+.profile{
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
+    gap: 30px;
+}
+.h3-tytul{
+    text-align: center;
+    margin: 30px 0;
+}
+.box1{
+    margin: 100px 0;
 }
 
 .box2{
-    margin-bottom: 50px;
+    margin-bottom: 200px;
 }
 .box3{
     margin: 50px 0;
 }
 .box5{
     margin: 30px 0;
+}
+.box7{
+    margin: 200px 0;
 }
