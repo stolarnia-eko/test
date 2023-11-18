@@ -72,7 +72,7 @@ a{
 .content{
     display: grid;
     grid-template-columns: 1fr 3fr 1fr;
-    /* height: 100vh; */
+    height: 100vh; 
     background-color: blanchedalmond;
 }
 /* center column */
