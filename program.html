@@ -62,7 +62,6 @@
                                 <p id="t-3"></p>
                             </div>
                         </div>
-                        <p class="dodatkowy-elem"></p>
                     </div>
                     <div class="box-center-center">
                         <div>
@@ -129,8 +128,8 @@
         </div>
         <div class="rozw">
             <h2>Kryte zawiasy</h2>
-            <button class="kr-zaw">Rozwórka</button>
-            <p>350</p>
+            <button class="kr-zaw" onclick="dodatkowa_rozworka()">Rozwórka</button>
+            <p id="res-desingo" style="font-size: 30px;"></p>
         </div>
     </div>
         <script>
@@ -139,6 +138,22 @@
                 const b = document.querySelector('.menu-burger');
                 a.style.display = 'block';
                 b.style.display = 'none';
+            }
+            function dodatkowa_rozworka(){
+                let width = document.getElementById('inp1').value
+                let res = document.getElementById('res-desingo')
+                if (width < 380){
+                    res.innerText = ''
+                }
+                else if (width >= 380 && width < 500){
+                    res.innerText = '250'
+                }
+                else if (width >= 501 && width < 1000){
+                    res.innerText = '350'
+                }
+                else if (width >= 1001){
+                    res.innerText = '500'
+                }
             }   
         </script>
         <script src="js/program.js"></script>
