@@ -42,6 +42,8 @@ let bot1 = document.getElementById('b-1')
 let bot2 = document.getElementById('b-2')
 let bot3 = document.getElementById('b-3')
 
+let res = document.getElementById('res-desingo')
+
 let standart
 
 
@@ -216,6 +218,7 @@ function input_click() {
     btn_standart.style.backgroundColor = 'blueviolet'
     btn_er1.style.backgroundColor = 'blueviolet'
     btn_er2.style.backgroundColor = 'blueviolet'
+    res.innerText = ''
     for (let index = 0; index < document.querySelectorAll('.btn9').length; index++) {
         const element = document.querySelectorAll('.btn9')[index];
         if (element.classList.contains('active')) {
