@@ -9,35 +9,12 @@
 body{
     font-size: 16px;
     font-family: 'Inter', serif;
-    overflow: hidden;
 }
-.red{
-    color: red;
-    font-weight: 700;
-}
-.blue{
-    color: blue;
-    font-weight: 700;
-}
-.green{
-    color: green;
-    font-weight: 700;
-}
-.yellow{
-    color: yellow;
-    font-weight: 700;
-}
-.brown{
-    color: brown;
-    font-weight: 700;
-}
+/*  */
 .header{
     background-color: rgb(131, 131, 131);
 }
-.one{
-    height: 100vh;
-    
-}
+
 .exit{
     display: flex;
     justify-content: flex-end;
@@ -85,4 +62,16 @@ a{
     width: 40px;
     margin-bottom: 10px;
     
+}
+.div1{
+    height: 300px;
+    background-color:red;
+}
+.div2{
+    height: 300px;
+    background-color:green ;
+}
+.div3{
+    height: 300px;
+    background-color:black ;
 }
