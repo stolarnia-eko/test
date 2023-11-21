@@ -110,3 +110,15 @@ header{
 .box7{
     margin: 200px 0;
 }
+@media(max-width: 800px){
+    .gross{
+        display: none;
+    }
+    .menu-burger{
+        display: block;
+    }
+    .menu-list{
+        display: flex;
+        justify-content: space-evenly;
+    }
+}
