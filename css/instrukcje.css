@@ -61,60 +61,16 @@ header{
     background-color: #151515;
     margin-bottom: 100px;
 }
-/* #####3333--- container------ */
-.container{
-    max-width: 1200px;
+/* #####3333--- container-card------ */
+.container-card{
+    max-width: 1100px;
     margin: 0 auto;
 }
-.tytul{
-    text-align: center;
-    font-size: 48px;
-    font-weight: 700;
-    margin-bottom: 30px;
-}
-.list-img{
+.box0{
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
-}
-.item-img{
-    border-style: solid;
-    margin-left: 10px;
-    
-}
-.my-img{
-    width: 100%;
-    height: auto;
-}
-.info-montaz{
-    max-width: 400px;
-    text-align: left;
-    margin: 0 10px;
-}
-.profile{
-    display: flex;
-    justify-content: space-around;
-    gap: 30px;
-}
-.h3-tytul{
-    text-align: center;
-    margin: 30px 0;
-}
-.box1{
-    margin: 100px 0;
+    grid-template-columns: 1fr 1fr;
 }
 
-.box2{
-    margin-bottom: 200px;
-}
-.box3{
-    margin: 50px 0;
-}
-.box5{
-    margin: 30px 0;
-}
-.box7{
-    margin: 200px 0;
-}
 @media(max-width: 800px){
     .gross{
         display: none;
