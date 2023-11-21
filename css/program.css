@@ -181,6 +181,16 @@ input{
     padding: 10px 20px;
 }
 @media(max-width: 800px){
+    .gross{
+        display: none;
+    }
+    .menu-burger{
+        display: block;
+    }
+    .menu-list{
+        display: flex;
+        justify-content: space-evenly;
+    }
     .box-right{
         font-size: 30px;
     }
@@ -202,3 +212,4 @@ input{
         row-gap: 10px;
     }
 }
+
