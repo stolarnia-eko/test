@@ -72,10 +72,10 @@ header{
     grid-template-columns: 1fr 1fr;
     gap: 20px;
 }
-.box1{
+.box{
     text-align: center;
 }
-.box1 img{
+.box img{
     max-width: 100%;
 }
 @media(max-width: 800px){
