@@ -192,7 +192,7 @@ input{
     font-size: 50px;
 }
 .calc{
-    max-width: 400px;
+    max-width: 380px;
     margin: 0 auto;
     border: 25px solid rgb(182, 177, 197);
     border-radius: 10px;
