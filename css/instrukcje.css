@@ -84,13 +84,23 @@ header{
 }
 img{
     max-width: 100%;
+    height: 80%;
+    object-fit: fill;
 }
 .box-alarm{
     display: grid;
     grid-template-columns: 1fr 1fr;
-    
+    text-align: center;
     grid-row-gap: 80px;
     grid-column-gap: 20px;
+}
+.info-luk{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-column-gap: 20px;
+}
+.info-luk img{
+    height: 100%;
 }
 @media(max-width: 800px){
     .gross{
