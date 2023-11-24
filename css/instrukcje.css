@@ -82,8 +82,15 @@ header{
 .box{
     text-align: center;
 }
-.box img{
+img{
     max-width: 100%;
+}
+.box-alarm{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    
+    grid-row-gap: 80px;
+    grid-column-gap: 20px;
 }
 @media(max-width: 800px){
     .gross{
