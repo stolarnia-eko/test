@@ -356,20 +356,28 @@ function add_color_box_standart(count_skr, str_zaw, str_slupek, spos_open) {
             if (str_zaw == 'left') {
                 box_left.style.color = 'red'
                 box_right.style.color = 'green'
+                p3.style.color = 'brown'
+                l3.style.color = 'red'
             }
             else if (str_zaw == 'right') {
                 box_left.style.color = 'green'
                 box_right.style.color = 'red'
+                l3.style.color = 'brown'
+                p3.style.color = 'red'
             }
         }
         else if (count_skr == '2') {
             if (str_slupek == 'left') {
                 box_left.style.color = 'brown'
                 box_right.style.color = 'red'
+                p3.style.color = 'red'
+                l3.style.color = 'brown'
             }
             else if (str_slupek == 'right') {
                 box_left.style.color = 'red'
                 box_right.style.color = 'brown'
+                l3.style.color = 'red'
+                p3.style.color = 'brown'
             }
         }
     }
@@ -377,16 +385,22 @@ function add_color_box_standart(count_skr, str_zaw, str_slupek, spos_open) {
         if (count_skr == '1'){
             if (str_zaw == 'left'){
                 box_left.style.color = 'brown'
-                box_right.style.color = 'red'
+                box_right.style.color = 'green'
+                p3.style.color = 'brown'
+                l3.style.color = 'brown'
             }
             else if (str_zaw == 'right'){
-                box_left.style.color = 'red'
+                box_left.style.color = 'green'
                 box_right.style.color = 'brown'
+                p3.style.color = 'brown'
+                l3.style.color = 'brown'
             }
         }
         else if (count_skr == '2'){
             box_left.style.color = 'brown'
             box_right.style.color = 'brown'
+            p3.style.color = 'brown'
+            l3.style.color = 'brown'
         }
     }
 }
@@ -777,7 +791,7 @@ function func_gora(widht, spos_open) {
             t1.innerText = ''
             t3.innerText = ''
         }
-        if (widht >= 1401 && widht <= 1600) {
+        else if (widht >= 1401 && widht <= 1600) {
             t2.innerText = '600 400'
             t1.innerText = ''
             t3.innerText = ''
