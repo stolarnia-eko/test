@@ -2030,3 +2030,21 @@ function res_box_xx_er2(widht, height, str_slupek, spos_open, str_zaw) {
     res_box_dol_er2(widht, count_skr)
     btn_er2.style.backgroundColor = 'red'
 }
+// calculator //
+let display = document.querySelector('.calc-res')
+
+let btn_digit = document.querySelectorAll('.btn-digit')
+for (let index = 0; index < btn_digit.length; index++) {
+    const element = btn_digit[index];
+    element.addEventListener('click', function(){
+        if (display.innerText.length <= 10){
+            if(display.innerText === '0'){
+                display.innerText =''
+            }
+            display.innerText += element.innerText
+        }    
+    })
+}
+function delete_display(){
+    display.innerText = '0'
+}
