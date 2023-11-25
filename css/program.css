@@ -123,9 +123,10 @@ a{
     grid-template-columns: 1fr 1fr 1fr;
     margin-top: 30px;
     text-align: center;
-    font-size: 40px;
+    font-size: 60px;
     font-weight: 700;
     font-family: 'Roboto', sans-serif;
+    color: black;
 }
 /* box left */
 .box-left{
