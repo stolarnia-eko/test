@@ -1,6 +1,6 @@
 @font-face {
     font-family: 'MyFont';
-    src: url('../fonts/Inter-Bold.ttf') format('truetype');
+    src: url('../font/Inter-Bold.ttf') format('truetype');
 }
 *{
     margin: 0;
@@ -221,7 +221,8 @@ input{
     padding: 0 4px;
     /* background-color: rgb(245, 255, 209); */
 }
-.btn-calc{
+.btn-calc,
+.btn-digit{
     height: 70px; 
     font-size: 40px; 
     border-radius: 50%;
