@@ -409,15 +409,21 @@ function add_color_box_er(count_skr, str_zaw){
         if (str_zaw == 'left'){
             box_left.style.color = 'red'
             box_right.style.color = 'green'
+            p3.style.color = 'brown'
+            l3.style.color = 'red'
         }
         else if (str_zaw == 'right'){
             box_left.style.color = 'green'
             box_right.style.color = 'red'
+            l3.style.color = 'brown'
+            p3.style.color = 'red'
         }
     }
     else if (count_skr == '2'){
         box_left.style.color = 'red'
         box_right.style.color = 'red'
+        l3.style.color = 'red'
+        p3.style.color = 'red'
     }
 }
 
