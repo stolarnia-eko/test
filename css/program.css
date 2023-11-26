@@ -148,6 +148,10 @@ a{
     border-radius: 15px;
     background-color: blueviolet;
 }
+#btn_er1{
+    margin-left: 30px;
+    margin-right: 30px;
+}
 .active{
     background-color: red;
 }
