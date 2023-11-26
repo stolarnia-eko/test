@@ -294,6 +294,7 @@ dialog{
     top: 40%;
     border: 0;
     border-radius: 20px;
+
 }
 #info-dialog{
     width: 400px;
@@ -301,6 +302,6 @@ dialog{
     font-size: 30px;
 }
 .modal::backdrop{
-    background-color: red;
+    background-color: rgba(110, 103, 103, 0.76);
     
 }
