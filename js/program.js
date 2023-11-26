@@ -89,7 +89,7 @@ function count_skrzydla(count) {
     if (count_skr == '1') {
         b1.style.backgroundColor = 'red'
         b2.style.backgroundColor = 'blueviolet'
-    
+
         klamka.style.display = 'block'
         zaw.style.display = 'block'
         stl.style.display = 'none'
@@ -381,22 +381,22 @@ function add_color_box_standart(count_skr, str_zaw, str_slupek, spos_open) {
             }
         }
     }
-    if (spos_open == 'rozw'){
-        if (count_skr == '1'){
-            if (str_zaw == 'left'){
+    if (spos_open == 'rozw') {
+        if (count_skr == '1') {
+            if (str_zaw == 'left') {
                 box_left.style.color = 'brown'
                 box_right.style.color = 'green'
                 p3.style.color = 'brown'
                 l3.style.color = 'brown'
             }
-            else if (str_zaw == 'right'){
+            else if (str_zaw == 'right') {
                 box_left.style.color = 'green'
                 box_right.style.color = 'brown'
                 p3.style.color = 'brown'
                 l3.style.color = 'brown'
             }
         }
-        else if (count_skr == '2'){
+        else if (count_skr == '2') {
             box_left.style.color = 'brown'
             box_right.style.color = 'brown'
             p3.style.color = 'brown'
@@ -404,22 +404,22 @@ function add_color_box_standart(count_skr, str_zaw, str_slupek, spos_open) {
         }
     }
 }
-function add_color_box_er(count_skr, str_zaw){
-    if (count_skr == '1'){
-        if (str_zaw == 'left'){
+function add_color_box_er(count_skr, str_zaw) {
+    if (count_skr == '1') {
+        if (str_zaw == 'left') {
             box_left.style.color = 'red'
             box_right.style.color = 'green'
             p3.style.color = 'brown'
             l3.style.color = 'red'
         }
-        else if (str_zaw == 'right'){
+        else if (str_zaw == 'right') {
             box_left.style.color = 'green'
             box_right.style.color = 'red'
             l3.style.color = 'brown'
             p3.style.color = 'red'
         }
     }
-    else if (count_skr == '2'){
+    else if (count_skr == '2') {
         box_left.style.color = 'red'
         box_right.style.color = 'red'
         l3.style.color = 'red'
@@ -759,16 +759,8 @@ function func_zasuwnica(height, height_klamka, str_zaw) {
         standart = ''
     }
 }
-function delete_active_button() {
-    if (btn_standart.classList.contains('active')) {
-        btn_standart.classList.remove('active')
-    }
-    else if (btn_er1.classList.contains('active')) {
-        btn_er1.classList.remove('active')
-    }
-    
-}
-function func_gora(widht, spos_open) {
+
+function func_gora(widht, spos_open, str_zaw) {
     if (spos_open == 'rozw_uch') {
         if (widht < 801) {
             t2.innerText = ''
@@ -798,13 +790,20 @@ function func_gora(widht, spos_open) {
             t3.innerText = ''
         }
         else if (widht >= 1401 && widht <= 1600) {
-            t2.innerText = '600 400'
-            t1.innerText = ''
-            t3.innerText = ''
+            if (str_zaw == 'left') {
+                t1.innerText = ''
+                t2.innerText = '400 600'
+                t3.innerText = ''
+            }
+            else if (str_zaw == 'right'){
+                t1.innerText = ''
+                t2.innerText = '600 400'
+                t3.innerText = ''
+            }
         }
     }
 }
-function func_dol(widht) {
+function func_dol(widht, str_zaw) {
     if (widht < 801) {
         bot2.innerText = ''
         bot1.innerText = ''
@@ -819,13 +818,20 @@ function func_dol(widht) {
         bot2.innerText = '600'
         bot1.innerText = ''
         bot3.innerText = ''
-        
+
     }
     else if (widht >= 1401 && widht <= 1600) {
-        bot2.innerText = '600 400'
-        bot1.innerText = ''
-        bot3.innerText = ''
-    
+        if (str_zaw == 'left'){
+            bot1.innerText = ''
+            bot2.innerText = '400 600'
+            bot3.innerText = ''
+        }
+        else if (str_zaw == 'right'){
+            bot1.innerText = ''
+            bot2.innerText = '600 400'
+            bot3.innerText = ''
+        }
+
     }
 }
 
@@ -834,8 +840,8 @@ function res_box_x(widht, height, height_klamka, str_zaw, spos_open) {
     if (standart == 'ok') {
         btn_standart.style.backgroundColor = 'red'
         func_plecy(spos_open, height, str_zaw)
-        func_gora(widht, spos_open)
-        func_dol(widht)
+        func_gora(widht, spos_open, str_zaw)
+        func_dol(widht, str_zaw)
     }
 }
 function res_box_xx(widht, height, str_slupek, spos_open) {
@@ -1097,7 +1103,7 @@ function xx_slupek_rozw_uch(widht, str_slupek) {
     }
     else if (widht >= 1401 && widht < 1601) {
         if (str_slupek == 'left') {
-            t1.innerText = '600 400'
+            t1.innerText = '400 600'
             t2.innerText = ''
         }
         else if (str_slupek == 'right') {
@@ -1363,7 +1369,7 @@ function func_gora_er1_rozw(widht) {
             t3.innerText = ''
         }
     }
-    else if(count_skr == '2'){
+    else if (count_skr == '2') {
         if (widht < 801) {
             t1.innerText = ''
             t2.innerText = ''
@@ -1482,7 +1488,7 @@ function res_box_zasuwnica_er2(height, height_klamka, str_zaw) {
             l3.innerText = ''
             l4.innerText = ''
         }
-        
+
     }
     else if (height >= 601 && height < 801 && h_kl == 283) {
         standart = 'ok'
@@ -2036,15 +2042,15 @@ let display = document.querySelector('.calc-res')
 let btn_digit = document.querySelectorAll('.btn-digit')
 for (let index = 0; index < btn_digit.length; index++) {
     const element = btn_digit[index];
-    element.addEventListener('click', function(){
-        if (display.innerText.length <= 10){
-            if(display.innerText === '0'){
-                display.innerText =''
+    element.addEventListener('click', function () {
+        if (display.innerText.length <= 10) {
+            if (display.innerText === '0') {
+                display.innerText = ''
             }
             display.innerText += element.innerText
-        }    
+        }
     })
 }
-function delete_display(){
+function delete_display() {
     display.innerText = '0'
 }
