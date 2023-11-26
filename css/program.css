@@ -265,6 +265,10 @@ input{
         grid-template-rows: 1fr 1fr;
         row-gap: 10px;
     }
+    #btn_er1{
+        margin-left: 0px;
+        margin-right: 0px; 
+    }
 }
 .box-dialog{
     width: 90%;
