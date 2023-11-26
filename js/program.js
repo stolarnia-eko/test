@@ -854,7 +854,7 @@ function res_box_xx(widht, height, str_slupek, spos_open) {
 
     xx_docisk(height, str_slupek, spos_open)
     if (spos_open == 'rozw') {
-        xx_top_bottom_rozw(widht, spos_open)
+        xx_top_bottom_rozw(widht, spos_open, str_slupek)
     }
 
 
@@ -1113,7 +1113,7 @@ function xx_slupek_rozw_uch(widht, str_slupek) {
     }
 
 }
-function xx_top_bottom_rozw(widht, spos_open) {
+function xx_top_bottom_rozw(widht, spos_open, str_slupek) {
     if (widht < 801) {
         if (spos_open == 'rozw_uch') {
             bot1.innerText = ''
@@ -1161,16 +1161,26 @@ function xx_top_bottom_rozw(widht, spos_open) {
     }
     else if (widht >= 1401 && widht < 1601) {
         if (spos_open == 'rozw_uch') {
-            bot1.innerText = '600 400'
+            bot1.innerText = '400 600'
             bot3.innerText = '600 400'
             bot2.innerText = ''
         }
         else if (spos_open == 'rozw') {
-            t1.innerText = '600 400'
-            t3.innerText = '600 400'
-            bot1.innerText = '600 400'
-            bot3.innerText = '600 400'
-            bot2.innerText = ''
+            if (str_slupek == 'left'){
+                t1.innerText = '400 600'
+                t3.innerText = '600 400'
+                bot1.innerText = '400 600'
+                bot3.innerText = '600 400'
+                bot2.innerText = ''
+            }
+            else if (str_slupek == 'right'){
+                t1.innerText = '400 600'
+                t3.innerText = '600 400'
+                bot1.innerText = '400 600'
+                bot3.innerText = '600 400'
+                bot2.innerText = ''
+            }
+            
         }
 
     }
