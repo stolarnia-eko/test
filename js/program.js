@@ -45,7 +45,8 @@ let bot3 = document.getElementById('b-3')
 let res = document.getElementById('res-desingo')
 
 let standart
-
+let dialog = document.querySelector('.modal')
+let infoDialog = document.getElementById('info-dialog')
 
 let btn_standart = document.getElementById('btn_standart')
 let btn_er1 = document.getElementById('btn_er1')
@@ -244,11 +245,13 @@ function click_button_standart() {
                 btn_er2.disabled = true
             }
             else {
-                alert('nie mamy takich wymiarow')
+                infoDialog.innerText = 'Niema takich zakresów!!!'
+                open_dialog()
             }
         }
         else {
-            alert('wyberi wysotu klamky')
+            infoDialog.innerText = 'Jaka wysokość klamki???'
+            open_dialog()
             delete_all_div()
             btn_standart.classList.remove('active')
         }
@@ -261,11 +264,13 @@ function click_button_standart() {
             btn_er2.disabled = true
         }
         else {
-            console.log('nie mamy takich wymiarow')
+            infoDialog.innerText = 'Niema takich zakresów!!!'
+            open_dialog()
         }
     }
     else {
-        alert('wwedit wymiarun skrzydla')
+        open_dialog()
+        infoDialog.innerText = 'Dodaj wymiary skrzydeł!!!'
     }
 }
 function click_button_er1() {
@@ -290,11 +295,13 @@ function click_button_er1() {
 
             }
             else {
-                alert('nie mamy takich wymiarow')
+                infoDialog.innerText = 'Niema takich zakresów!!!'
+                open_dialog()
             }
         }
         else {
-            alert('wyberi wysotu klamky')
+            infoDialog.innerText = 'Jaka wysokość klamki???'
+            open_dialog()
             btn_er1.classList.remove('active')
         }
     }
@@ -306,11 +313,13 @@ function click_button_er1() {
             btn_er2.disabled = true
         }
         else {
-            console.log('nie mamy takich wymiarow')
+            infoDialog.innerText = 'Niema takich zakresów!!!'
+            open_dialog()
         }
     }
     else {
-        alert('wwedit wymiarun skrzydla')
+        open_dialog()
+        infoDialog.innerText = 'Dodaj wymiary skrzydeł!!!'
     }
 }
 function click_button_er2() {
@@ -328,11 +337,13 @@ function click_button_er2() {
                 btn_er1.disabled = true
             }
             else {
-                alert('nie mamy takich wymiarow')
+                infoDialog.innerText = 'Niema takich zakresów!!!'
+                open_dialog()
             }
         }
         else {
-            alert('wyberi wysotu klamky')
+            infoDialog.innerText = 'Jaka wysokość klamki???'
+            open_dialog()
             btn_standart.classList.remove('active')
         }
     }
@@ -343,11 +354,13 @@ function click_button_er2() {
             btn_er1.disabled = true
         }
         else {
-            console.log('nie mamy takich wymiarow')
+            infoDialog.innerText = 'Niema takich zakresów!!!'
+            open_dialog()
         }
     }
     else {
-        alert('wwedit wymiarun skrzydla')
+        open_dialog()
+        infoDialog.innerText = 'Dodaj wymiary skrzydeł!!!'
     }
 }
 function add_color_box_standart(count_skr, str_zaw, str_slupek, spos_open) {
@@ -754,9 +767,10 @@ function func_zasuwnica(height, height_klamka, str_zaw) {
     }
     else {
         btn_standart.style.backgroundColor = 'blueviolet'
-        alert('uwaga: niestandart-- func zasuwnica')
         delete_all_div()
         standart = ''
+        infoDialog.innerText = 'Niestandart!!! Okuwamy według skrzydła!!!'
+        open_dialog()
     }
 }
 
@@ -1641,7 +1655,8 @@ function res_box_zasuwnica_er2(height, height_klamka, str_zaw) {
         }
     }
     else {
-        alert('uwaga: niestandart!!! -- er2')
+        infoDialog.innerText = 'Niestandart!!! Okuwamy według skrzydła!!!'
+        open_dialog()
         standart = ''
         delete_all_div()
     }
@@ -2045,6 +2060,14 @@ function res_box_xx_er2(widht, height, str_slupek, spos_open, str_zaw) {
     res_box_plecy_er2(height, count_skr, str_zaw)
     res_box_dol_er2(widht, count_skr)
     btn_er2.style.backgroundColor = 'red'
+}
+
+
+function open_dialog(){
+    dialog.showModal()
+}
+function close_dialog(){
+    dialog.close()
 }
 // calculator //
 let display = document.querySelector('.calc-res')
