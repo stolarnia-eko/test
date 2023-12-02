@@ -791,7 +791,7 @@ function func_gora(widht, spos_open, str_zaw) {
             t1.innerText = ''
             t3.innerText = ''
         }
-        else if (widht >= 1401){
+        else if (widht >= 1401) {
             open_dialog()
             infoDialog.innerText = 'Montaż dodatkowej rozwórki!!!'
             t2.innerText = 'AX-750'
@@ -816,7 +816,7 @@ function func_gora(widht, spos_open, str_zaw) {
                 t2.innerText = '400 600'
                 t3.innerText = ''
             }
-            else if (str_zaw == 'right'){
+            else if (str_zaw == 'right') {
                 t1.innerText = ''
                 t2.innerText = '600 400'
                 t3.innerText = ''
@@ -842,12 +842,12 @@ function func_dol(widht, str_zaw) {
 
     }
     else if (widht >= 1401 && widht <= 1600) {
-        if (str_zaw == 'left'){
+        if (str_zaw == 'left') {
             bot1.innerText = ''
             bot2.innerText = '400 600'
             bot3.innerText = ''
         }
-        else if (str_zaw == 'right'){
+        else if (str_zaw == 'right') {
             bot1.innerText = ''
             bot2.innerText = '600 400'
             bot3.innerText = ''
@@ -1078,7 +1078,7 @@ function xx_top_rozw_uch(widht, str_slupek) {
         }
     }
     else if (widht >= 1001 && widht < 1401) {
-        
+
         if (str_slupek == 'left') {
             t3.innerText = 'AX-750'
             t1.innerText = ''
@@ -1104,7 +1104,7 @@ function xx_top_rozw_uch(widht, str_slupek) {
             t2.innerText = ''
         }
     }
-    
+
 }
 function xx_slupek_rozw_uch(widht, str_slupek) {
     if (widht < 801) {
@@ -1202,21 +1202,21 @@ function xx_top_bottom_rozw(widht, spos_open, str_slupek) {
             bot2.innerText = ''
         }
         else if (spos_open == 'rozw') {
-            if (str_slupek == 'left'){
+            if (str_slupek == 'left') {
                 t1.innerText = '400 600'
                 t3.innerText = '600 400'
                 bot1.innerText = '400 600'
                 bot3.innerText = '600 400'
                 bot2.innerText = ''
             }
-            else if (str_slupek == 'right'){
+            else if (str_slupek == 'right') {
                 t1.innerText = '400 600'
                 t3.innerText = '600 400'
                 bot1.innerText = '400 600'
                 bot3.innerText = '600 400'
                 bot2.innerText = ''
             }
-            
+
         }
 
     }
@@ -1355,7 +1355,7 @@ function func_dol_er1(widht, count_skr) {
             bot2.innerText = '600 400'
             bot3.innerText = ''
         }
-        
+
     }
     else if (count_skr == '2') {
         if (widht < 400) {
@@ -1427,12 +1427,12 @@ function func_gora_er1_rozw(widht) {
             t2.innerText = ''
             t3.innerText = 'AX-600'
         }
-        else if (widht >= 1001 && widht < 1401)  {
+        else if (widht >= 1001 && widht < 1401) {
             t1.innerText = 'AX-750'
             t2.innerText = ''
             t3.innerText = 'AX-750'
         }
-        else if (widht >= 1401){
+        else if (widht >= 1401) {
             open_dialog()
             infoDialog.innerText = 'Montaż dodatkowej rozwórki!!!'
             t1.innerText = 'AX-750'
@@ -2023,7 +2023,7 @@ function res_box_gora_er2(widht, count_skr) {
             t3.innerText = 'AX-600'
         }
     }
-    
+
 }
 function res_box_dol_er2(widht, count_skr) {
     if (widht < 490) {
@@ -2108,9 +2108,27 @@ function res_box_xx_er2(widht, height, str_slupek, spos_open, str_zaw) {
 }
 
 
-function open_dialog(){
+function open_dialog() {
     dialog.showModal()
 }
-function close_dialog(){
+function close_dialog() {
     dialog.close()
+}
+function add_style_body() {
+
+}
+let theming = document.querySelectorAll('.style-body')
+for (let index = 0; index < theming.length; index++) {
+    const element = theming[index];
+    element.addEventListener('click', () => {
+        if (element.textContent === 'Dark') {
+            document.body.style.backgroundColor = 'black'
+            document.body.style.color = 'white'
+        }
+        else {
+            document.body.style.backgroundColor = 'blanchedalmond'
+            document.body.style.color = 'black'
+        }
+    })
+
 }
