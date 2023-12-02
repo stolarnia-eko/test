@@ -5,6 +5,7 @@ let stl = document.getElementById('slup')
 
 let box_left = document.querySelector('.box-left')
 let box_right = document.querySelector('.box-right')
+let box_bottom = document.querySelector('.box-bottom')
 
 let count_skr = '1'
 let spos_open = 'rozw_uch'
@@ -2124,6 +2125,8 @@ for (let index = 0; index < theming.length; index++) {
         if (element.textContent === 'Dark') {
             document.body.style.backgroundColor = 'black'
             document.body.style.color = 'white'
+            box_bottom.style.color = 'yellow'
+            
         }
         else {
             document.body.style.backgroundColor = 'blanchedalmond'
