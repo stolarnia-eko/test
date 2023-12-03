@@ -2126,7 +2126,8 @@ for (let index = 0; index < theming.length; index++) {
             document.body.style.backgroundColor = 'black'
             document.body.style.color = 'white'
             box_bottom.style.color = 'yellow'
-            
+            value_resultat.style.color = 'black'
+
         }
         else {
             document.body.style.backgroundColor = 'blanchedalmond'
@@ -2136,3 +2137,66 @@ for (let index = 0; index < theming.length; index++) {
     })
 
 }
+// calkulator
+let value_resultat = document.querySelector('.res-value')
+let zn = ''
+
+document.querySelectorAll('.btn').forEach(button => {
+    button.addEventListener('click', function (param) {
+        for (let index = 0; index < document.querySelectorAll('.btn').length; index++) {
+            const element = document.querySelectorAll('.btn')[index];
+            if (element.classList.contains('click-active-calc')) {
+                element.classList.remove('click-active-calc')
+            }
+            button.classList.add('click-active-calc')
+        }
+    });
+});
+
+document.querySelector('.box-btn').onclick = (event) => {
+    const key = event.target.textContent
+    let a = document.getElementById('digit-a').value
+    let b = document.getElementById('digit-b').value
+    if (a != '' && b != '') {
+        if (key === '+') {
+            zn = (+a) + (+b)
+        }
+        if (key === '-') {
+            zn = a - b
+        }
+        if (key === 'x') {
+            zn = a * b
+        }
+        if (key === '/') {
+            zn = a / b
+
+        }
+        if (key === '|W|') {
+            zn = (a - b) / 2
+        }
+
+        str = zn.toString()
+        if (str.length >= 10) {
+            str = str.slice(0, 10)
+        }
+        value_resultat.textContent = str
+    }
+
+}
+document.querySelector('.clear-btn').addEventListener('click', () => {
+    let a = document.getElementById('digit-a')
+    let b = document.getElementById('digit-b')
+    a.value = ''
+    b.value = ''
+    value_resultat.textContent = ''
+    document.querySelectorAll('.btn').forEach(button => {
+        for (let index = 0; index < document.querySelectorAll('.btn').length; index++) {
+            const element = document.querySelectorAll('.btn')[index];
+            if (element.classList.contains('click-active-calc')) {
+                element.classList.remove('click-active-calc')
+            }
+        }
+
+    });
+
+})
