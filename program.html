@@ -91,11 +91,11 @@
                         </div>
                         <div>
                             <p>SZEROKOŚĆ SKRZYDŁA</p>
-                            <input type="number" id="inp1" value="" onclick="input_click()">
+                            <input type="number" id="inp1" value="" onclick="input_click()" oninput="maxLengthCheck(this)" maxlength="5">
                         </div>
                         <div>
                             <p>WYSOKOŚĆ SKRZYDŁA</p>
-                            <input type="number" id="inp2" value="" onclick="input_click()">
+                            <input type="number" id="inp2" value="" onclick="input_click()" oninput="maxLengthCheck(this)" maxlength="5">
                         </div>
                         <div id="klamka">
                             <p>Klamka</p>
@@ -144,6 +144,21 @@
             <button class="style-body">Light</button>
             <button class="style-body">Dark</button>
         </div>
+        <div class="calk">
+            <p style="font-size: 20px;">Pierwsza liczba</p>
+            <input type="number" id="digit-a" oninput="maxLengthCheck(this)" maxlength="5">
+            <p style="font-size: 20px;">Druga liczba</p>
+            <input type="number" id="digit-b" oninput="maxLengthCheck(this)" maxlength="5">
+            <div class="box-btn">
+                <button class="btn">+</button>
+                <button class="btn">-</button>
+                <button class="btn">x</button>
+                <button class="btn">/</button>
+                <button class="btn">|W|</button>
+            </div>
+            <button class="clear-btn">Clear</button>
+            <p class="res-value">Resultat</p>
+        </div>
     </div>
     <script>
         function main() {
@@ -173,6 +188,11 @@
         }   
     </script>
     <script src="js/program.js"></script>
+    <script>
+        function maxLengthCheck (input) { 
+            if (input.value.length > input.maxLength) input.value = input.value.slice (0, input.maxLength)
+         }
+    </script>
 </body>
 
 </html>
