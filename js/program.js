@@ -2131,6 +2131,7 @@ for (let index = 0; index < theming.length; index++) {
         else {
             document.body.style.backgroundColor = 'blanchedalmond'
             document.body.style.color = 'black'
+            box_bottom.style.color = 'black'
         }
     })
 
