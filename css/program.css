@@ -196,6 +196,44 @@ input{
 .style-body{
     padding: 10px 35px;
 }
+/* calkulator */
+.calk{
+    max-width: 400px;
+    margin: 50px auto;
+    background-color: rgb(193, 190, 190);
+    border-style: solid;
+    border-width: 8px;
+    border-color: blue;
+    border-radius: 20px;
+    text-align: center;
+}
+input{
+    width: 150px;
+    font-size: 40px;
+}
+.box-btn{
+    margin: 20px 0;
+}
+.btn{
+    font-size: 40px;
+    padding: 0 20px;
+}
+.click-active-calc{
+    background-color: red;
+}
+.clear-btn{
+    background-color: red;
+    font-size: 20px;
+    width: 100px;
+}
+.res-value{
+    font-size: 30px;
+    background-color: azure;
+    width: 50%;
+    height: 30px;
+    margin: 30px auto;
+    padding: 10px 0;
+}
 
 @media(max-width: 800px){
     .gross{
