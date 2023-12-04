@@ -1324,7 +1324,7 @@ function func_plecy_er1(height, str_zaw) {
             p4.innerText = ''
         }
     }
-    else if (height >= 2601 && height < 2800) {
+    else if (height >= 2601 && height < 2801) {
         if (str_zaw == 'left') {
             l1.innerText = '600'
             l2.innerText = '600'
