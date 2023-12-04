@@ -330,7 +330,7 @@ function click_button_er2() {
     add_color_box_er(count_skr, str_zaw)
     if (count_skr == '1' && inp1 != '' && inp2 != '') {
         if (h_kl != '') {
-            if (inp2 >= 490 && inp2 <= 2600 && inp1 <= data.width_max) {
+            if (inp1 >= 490 && inp1 <= 1600 && inp2 >= 490 && inp2 <= 2600) {
                 res_box_x_er2(inp1, inp2, h_kl, str_zaw, count_skr)
                 h_kl = ''
                 btn_er2.classList.add('active')
@@ -1544,20 +1544,9 @@ function res_box_x_er2(widht, height, h_kl, str_zaw, count_skr) {
     }
 
 }
-function res_box_zasuwnica_er2(height, height_klamka, str_zaw) {
-    if (height < 601) {
-        if (str_zaw == 'left') {
-            p1.innerText = ''
-            p2.innerText = ''
-            p3.innerText = ''
-            p4.innerText = ''
-        }
-        else if (str_zaw == 'right') {
-            l1.innerText = ''
-            l2.innerText = ''
-            l3.innerText = ''
-            l4.innerText = ''
-        }
+function res_box_zasuwnica_er2(height, h_kl, str_zaw) {
+    if (height >= 490 && height < 601 && h_kl === '283') {
+
 
     }
     else if (height >= 601 && height < 801 && h_kl == 283) {
@@ -1657,32 +1646,32 @@ function res_box_zasuwnica_er2(height, height_klamka, str_zaw) {
     else if (height >= 1601 && height < 1801 && h_kl == 1020) {
         standart = 'ok'
         if (str_zaw == 'left') {
-            p1.innerText = '1370'
-            p2.innerText = '1121'
-            p3.innerText = '700'
-            p4.innerText = ''
+            p1.innerText = ''
+            p2.innerText = '1370'
+            p3.innerText = '1121'
+            p4.innerText = '700'
         }
         else if (str_zaw == 'right') {
-            l1.innerText = '1370'
-            l2.innerText = '1121'
-            l3.innerText = '700'
-            l4.innerText = ''
+            l1.innerText = ''
+            l2.innerText = '1370'
+            l3.innerText = '1121'
+            l4.innerText = '700'
         }
 
     }
     else if (height >= 1801 && height < 2001 && h_kl == 1020) {
         standart = 'ok'
         if (str_zaw == 'left') {
-            p1.innerText = '1370'
-            p2.innerText = '1121'
-            p3.innerText = '700'
-            p4.innerText = ''
+            p1.innerText = ''
+            p2.innerText = '1370'
+            p3.innerText = '1121'
+            p4.innerText = '700'
         }
         else if (str_zaw == 'right') {
-            l1.innerText = '1370'
-            l2.innerText = '1121'
-            l3.innerText = '700'
-            l4.innerText = ''
+            l1.innerText = ''
+            l2.innerText = '1370'
+            l3.innerText = '1121'
+            l4.innerText = '700'
         }
     }
     else if (height >= 2001 && height < 2601 && h_kl == 1020) {
@@ -1760,7 +1749,7 @@ function res_box_plecy_er2(height, count_skr, str_zaw) {
             p4.innerText = ''
         }
     }
-    else if (height <= 801 && height > 1001) {
+    else if (height >= 801 && height < 1001) {
         if (count_skr == '1') {
             if (str_zaw == 'left') {
                 l1.innerText = '400'
@@ -2134,6 +2123,7 @@ function add_style_body() {
 
 }
 let theming = document.querySelectorAll('.style-body')
+let title = document.querySelector('h1')
 for (let index = 0; index < theming.length; index++) {
     const element = theming[index];
     element.addEventListener('click', () => {
@@ -2142,12 +2132,13 @@ for (let index = 0; index < theming.length; index++) {
             document.body.style.color = 'white'
             box_bottom.style.color = 'yellow'
             value_resultat.style.color = 'black'
-
+            title.style.color = 'white'
         }
         else {
             document.body.style.backgroundColor = 'blanchedalmond'
             document.body.style.color = 'black'
             box_bottom.style.color = 'black'
+            title.style.color = 'black'
         }
     })
 
@@ -2201,6 +2192,7 @@ document.querySelector('.box-btn').onclick = (event) => {
 document.querySelector('.clear-btn').addEventListener('click', () => {
     let a = document.getElementById('digit-a')
     let b = document.getElementById('digit-b')
+    
     a.value = ''
     b.value = ''
     value_resultat.textContent = ''
