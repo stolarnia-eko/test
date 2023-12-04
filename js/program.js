@@ -957,7 +957,7 @@ function xx_plecy(height, str_slupek, spos_open) {
         }
 
     }
-    else if (height >= 2401 && height <= 2800) {
+    else if (height >= 2401 && height <= 2600) {
         if (str_slupek == 'right') {
             l1.innerText = '600'
             l2.innerText = '600'
@@ -968,6 +968,21 @@ function xx_plecy(height, str_slupek, spos_open) {
             p1.innerText = '600'
             p2.innerText = '600'
             p3.innerText = '400'
+            p4.innerText = ''
+        }
+
+    }
+    else if (height >= 2601 && height <= 2800) {
+        if (str_slupek == 'right') {
+            l1.innerText = '600'
+            l2.innerText = '600'
+            l3.innerText = '600'
+            l4.innerText = ''
+        }
+        else if (str_slupek == 'left') {
+            p1.innerText = '600'
+            p2.innerText = '600'
+            p3.innerText = '600'
             p4.innerText = ''
         }
 
