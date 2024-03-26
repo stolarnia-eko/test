@@ -651,13 +651,13 @@ function func_zasuwnica(height, height_klamka, str_zaw) {
         if (str_zaw == 'left') {
             p1.innerText = ''
             p2.innerText = '550'
-            p3.innerText = '283'
+            p3.innerText = '288'
             p4.innerText = ''
         }
         else if (str_zaw == 'right') {
             l1.innerText = ''
             l2.innerText = '550'
-            l3.innerText = '283'
+            l3.innerText = '288'
             l4.innerText = ''
         }
     }
