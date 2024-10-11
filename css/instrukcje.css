@@ -104,6 +104,7 @@ img{
 }
 .box_li{
     margin-left: 10px;
+    margin-right: 10px;
     background-color: rgb(245, 193, 125);
 }
 @media(max-width: 800px){
