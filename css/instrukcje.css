@@ -102,6 +102,9 @@ img{
 .info-luk img{
     height: 100%;
 }
+.box_img{
+    margin: 10px;
+}
 .box_li{
     margin-left: 10px;
     margin-right: 10px;
